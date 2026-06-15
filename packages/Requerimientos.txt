@@ -1,0 +1,55 @@
+## 📦 Paquetes NuGet necesarios para ShadowLink
+
+Estos son los paquetes que debes instalar en tu proyecto:
+
+### Lista completa de paquetes:
+
+| # | Paquete | Versión | Para qué sirve |
+|---|---------|---------|----------------|
+| 1 | `Newtonsoft.Json` | 13.0.2 | Procesar mensajes JSON de Discord |
+| 2 | `System.Text.Json` | 10.0.8 | Alternativa para JSON |
+| 3 | `System.Management` | (built-in) | Obtener información del sistema |
+| 4 | `System.Drawing.Common` | 9.0.0 | Capturar pantalla |
+| 5 | `DirectShowLib` | 1.0.0 | Acceder a la cámara web |
+
+### Comandos para instalar (Consola NuGet):
+
+```powershell
+Install-Package Newtonsoft.Json -Version 13.0.2
+Install-Package System.Text.Json -Version 10.0.8
+Install-Package System.Drawing.Common -Version 9.0.0
+Install-Package DirectShowLib -Version 1.0.0
+```
+
+### Paquete adicional (ya incluido en .NET):
+
+```
+System.Management
+```
+Este no necesita instalación por NuGet, solo agregar la referencia:
+- Haz clic derecho en `Referencias` → `Agregar referencia`
+- Busca `System.Management` en `Ensamblados` → `Marco`
+
+### Dependencias que se instalan automáticamente:
+
+Al instalar los paquetes anteriores, estos se instalan solos:
+
+- `Microsoft.Bcl.AsyncInterfaces`
+- `System.Buffers`
+- `System.Memory`
+- `System.Numerics.Vectors`
+- `System.Runtime.CompilerServices.Unsafe`
+- `System.Threading.Tasks.Extensions`
+- `System.IO.Pipelines`
+- `System.Text.Encodings.Web`
+
+### Resumen rápido (copiar y pegar):
+
+```powershell
+Install-Package Newtonsoft.Json -Version 13.0.2
+Install-Package System.Text.Json -Version 10.0.8
+Install-Package System.Drawing.Common -Version 9.0.0
+Install-Package DirectShowLib -Version 1.0.0
+```
+
+**Solo necesitas instalar esos 4 paquetes.** El resto se instalan automáticamente.
