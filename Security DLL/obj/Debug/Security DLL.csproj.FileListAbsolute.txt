@@ -1,0 +1,2 @@
+C:\Users\algu7\source\repos\Security DLL\Security DLL\bin\Debug\Security DLL.exe
+C:\Users\algu7\source\repos\Security DLL\Security DLL\bin\Debug\Newtonsoft.Json.dll
